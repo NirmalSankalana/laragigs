@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ListingController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,20 +17,12 @@ use App\Models\Listing;
 |
 */
 // endpoint and function
-Route::get('/', function () {
-    // return the welcome view in /resources/views folder
-    return view('listings', [
-        'heading' => 'Latest Listing',
-        'listings' => Listing::all()
-    ]);
-});
+Route::get('/', [ListingController::class, 'index']);
 
-Route::get('/listings/{id}', function ($id) {
-    // return the welcome view in /resources/views folder
-    return view('listing', [
-        'listing' => Listing::find($id)
-    ]);
-});
+Route::get('/listings/{listing}', [ListingController::class, 'show']);
+
+
+
 
 // Closures are anonymous functions that can be stored in variables, passed as arguments to other functions, or returned as values from other functions.
 // $addition = function(int $a, int $b): int {
