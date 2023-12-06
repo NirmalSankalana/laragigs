@@ -8,6 +8,7 @@
             <p class="card-text font-weight-bold">Location: {{$listing['location']}}</p>
             <p class="card-text">Email: {{$listing['email']}}</p>
             <p class="card-text">Website: {{$listing['website']}}</p>
+            <x-listing-tags :tagsCsv="$listing->tags" />
         </div>
     </div>
 </x-card>
