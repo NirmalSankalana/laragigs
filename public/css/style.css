@@ -1,0 +1,13 @@
+:root {
+    --dark-blue: #232150;
+    --light-blue: #5275b9;
+}
+
+
+.footer {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    bottom: 0;
+    background-color: var(--dark-blue);
+}

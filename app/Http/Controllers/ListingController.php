@@ -22,6 +22,11 @@ class ListingController extends Controller
             'listing' => $listing
         ]);
     }
+
+    public function create()
+    {
+        return view('listings.create');
+    }
 }
 
 // GET	    /photos/{photo}/comments	    index	photos.comments.index

@@ -21,6 +21,8 @@ Route::get('/', [ListingController::class, 'index']);
 
 Route::get('/listings/{listing}', [ListingController::class, 'show']);
 
+Route::get('/listings/create', [ListingController::class, 'create']);
+
 
 
 
