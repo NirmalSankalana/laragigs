@@ -11,7 +11,7 @@
                 </button>
             </div>
         </form>
-        <button class="btn btn-sm" type="submit">Post a Job</button>
+        <a href="/listings/create" class="btn btn-sm" type="submit">Post a Job</a>
     </div>
 </header>
 

@@ -2,10 +2,13 @@
     --dark-blue: #232150;
     --light-blue: #4d9dc4;
     --light-blue-hover: #48c4ce;
+    --background: #dde4e8;
+    --white: #ffffff;
 }
 
 .btn {
     background-color: var(--light-blue);
+    color: var(--white);
 }
 
 .btn:hover {
@@ -24,15 +27,28 @@ header {
     justify-content: space-between;
 }
 
-.search-btn i {
+.search-btn>i {
     width: 0.75rem;
     height: 0.75rem;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
 }
+
+.form-container {
+    border-radius: 2%;
+    background-color: var(--background);
+    padding: 1rem;
+    margin: 1rem;
+}
+
 
 
 .footer {
     width: 100%;
-    bottom: 0;
+    bottom: 0rem;
     background-color: var(--dark-blue);
 }
 
@@ -45,6 +61,10 @@ header {
 
     .navbar-control {
         margin-right: 6.75rem;
+    }
+
+    .form-container {
+        min-width: 48rem;
     }
 
     .footer {
@@ -62,6 +82,10 @@ header {
     .navbar-control {
         margin-right: 6rem;
     }
+
+    .form-container {
+        min-width: 36rem;
+    }
 }
 
 /* lg */
@@ -73,6 +97,10 @@ header {
 
     .navbar-control {
         margin-right: 4.5rem;
+    }
+
+    .form-container {
+        min-width: 24rem;
     }
 }
 
@@ -87,6 +115,9 @@ header {
         margin-right: 3rem;
     }
 
+    .form-container {
+        min-width: 16rem;
+    }
 }
 
 /* sm */
@@ -98,6 +129,10 @@ header {
 
     .navbar-control {
         margin-right: 1.5rem;
+    }
+
+    .form-container {
+        min-width: 16rem;
     }
 }
 

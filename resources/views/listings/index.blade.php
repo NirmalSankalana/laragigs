@@ -4,7 +4,6 @@
     
 
     @include('partials._header')
-    @include('partials._search')
     <div class="container my-5">
         @if(count($listings)==0)
             <p>No Listings Found</p>
