@@ -14,8 +14,8 @@
                 @endforeach
             </div>
         @endif
+        <div class="d-flex justify-content-center">
+            {{$listings->links('pagination::bootstrap-4')}}
+        </div>
     </div>
-    
-    
-
     @endsection

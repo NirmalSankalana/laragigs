@@ -10,7 +10,7 @@
         @csrf
         <div class="form-group">
             <label for="companyName">Company Name</label>
-            <input type="text" class="form-control" name="company" placeholder="Enter company name" required>
+            <input type="text" class="form-control" name="company" placeholder="Enter company name" value="{{old('company')}}" required>
             @error('company')
             <div class="alert alert-danger alert-dismissible fade show my-1" role="alert">
                 {{$message}}
@@ -23,7 +23,7 @@
     
         <div class="form-group">
             <label for="jobTitle">Job Title</label>
-            <input type="text" class="form-control" name="title" placeholder="Enter job title" required>
+            <input type="text" class="form-control" name="title" placeholder="Enter job title" value="{{old('title')}}" required>
             @error('title')
             <div class="alert alert-danger alert-dismissible fade show my-1" role="alert">
                 {{$message}}
@@ -36,7 +36,7 @@
     
         <div class="form-group">
             <label for="jobLocation">Job Location</label>
-            <input type="text" class="form-control" name="location" placeholder="Enter job location" required>
+            <input type="text" class="form-control" name="location" placeholder="Enter job location" value="{{old('location')}}" required>
             @error('location')
             <div class="alert alert-danger alert-dismissible fade show my-1" role="alert">
                 {{$message}}
@@ -49,7 +49,7 @@
     
         <div class="form-group">
             <label for="url">Website/Application URL</label>
-            <input type="url" class="form-control" name="website" placeholder="Enter URL" required>
+            <input type="url" class="form-control" name="website" placeholder="Enter URL" value="{{old('website')}}" required>
             @error('location')
             <div class="alert alert-danger alert-dismissible fade show my-1" role="alert">
                 {{$location}}
@@ -62,7 +62,7 @@
 
         <div class="form-group">
             <label for="url">Email</label>
-            <input type="email" class="form-control" name="email" placeholder="Enter Email" required>
+            <input type="email" class="form-control" name="email" placeholder="Enter Email" value="{{old('email')}}"  required>
             @error('email')
             <div class="alert alert-danger alert-dismissible fade show my-1" role="alert">
                 {{$message}}
@@ -75,7 +75,7 @@
     
         <div class="form-group">
             <label for="tags">Tags</label>
-            <input type="text" class="form-control" name="tags" placeholder="Enter tags (comma separated)">
+            <input type="text" class="form-control" name="tags" value="{{old('tags')}}" placeholder="Enter tags (comma separated)">
             @error('tags')
             <div class="alert alert-danger alert-dismissible fade show my-1" role="alert">
                 {{$message}}
@@ -93,7 +93,7 @@
     
         <div class="form-group">
             <label for="jobDescription">Job Description</label>
-            <textarea class="form-control" name="description" rows="4" placeholder="Enter job description" required></textarea>
+            <textarea class="form-control" name="description" rows="6" value="{{old('description')}}" placeholder="Enter job description" required></textarea>
             @error('description')
             <div class="alert alert-danger alert-dismissible fade show my-1" role="alert">
                 {{$message}}
