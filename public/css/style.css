@@ -24,6 +24,11 @@ header {
     justify-content: space-between;
 }
 
+.search-btn i {
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
 
 .footer {
     width: 100%;

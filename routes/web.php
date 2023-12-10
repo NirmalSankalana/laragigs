@@ -19,9 +19,9 @@ use App\Models\Listing;
 // endpoint and function
 Route::get('/', [ListingController::class, 'index']);
 
-Route::get('/listings/{listing}', [ListingController::class, 'show']);
-
 Route::get('/listings/create', [ListingController::class, 'create']);
+
+Route::get('/listings/{listing}', [ListingController::class, 'show']);
 
 
 
