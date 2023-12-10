@@ -1,13 +1,109 @@
 :root {
     --dark-blue: #232150;
-    --light-blue: #5275b9;
+    --light-blue: #4d9dc4;
+    --light-blue-hover: #48c4ce;
+}
+
+.btn {
+    background-color: var(--light-blue);
+}
+
+.btn:hover {
+    background-color: var(--light-blue-hover);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    background-color: var(--dark-blue);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 .footer {
-    position: fixed;
     width: 100%;
-    height: 4rem;
     bottom: 0;
     background-color: var(--dark-blue);
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+        margin-left: 6.75rem;
+    }
+
+    .navbar-control {
+        margin-right: 6.75rem;
+    }
+
+    .footer {
+        height: 4rem;
+    }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+        margin-left: 6rem;
+    }
+
+    .navbar-control {
+        margin-right: 6rem;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+        margin-left: 4.5rem;
+    }
+
+    .navbar-control {
+        margin-right: 4.5rem;
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+        margin-left: 3rem;
+    }
+
+    .navbar-control {
+        margin-right: 3rem;
+    }
+
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+        margin-left: 1.5rem;
+    }
+
+    .navbar-control {
+        margin-right: 1.5rem;
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+        margin-left: 0.75rem;
+    }
+
+    .navbar-control {
+        margin-right: 0.75rem;
+    }
 }
