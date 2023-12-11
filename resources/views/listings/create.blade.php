@@ -5,7 +5,7 @@
         <h2 class="text-center">Create a GIG</h2>
         <h6 class="text-muted text-center">Post a gig to find a developer</h6>
     
-        <form method="POST" action="/listings">
+        <form method="POST" action="/listings" enctype="multipart/form-data">
         <!-- prevents cross-snamee scripting attact -->
         @csrf
         <div class="form-group">
@@ -86,10 +86,18 @@
             @enderror
         </div>
     
-        {{-- <div class="form-group">
-            <label for="companyLogo">Company Logo</label>
-            <input type="file" class="form-control-file" name="companyLogo" accept="image/*">
-        </div> --}}
+        <div class="form-group">
+            <label for="logo">Company Logo</label>
+            <input type="file" class="form-control-file" name="logo" accept="image/*">
+            @error('logo')
+            <div class="alert alert-danger alert-dismissible fade show my-1" role="alert">
+                {{$message}}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            @enderror
+        </div>
     
         <div class="form-group">
             <label for="jobDescription">Job Description</label>
