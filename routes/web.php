@@ -52,6 +52,12 @@ Route::get('/profile', [UserControler::class, 'show']);
 //Log out
 Route::post('/logout', [UserControler::class, 'logout']);
 
+// Show Lofin Form
+Route::get('/login', [UserControler::class, 'login']);
+
+//Login user
+Route::post('/users/authenticate', [UserControler::class, 'authenticate']);
+
 
 
 
