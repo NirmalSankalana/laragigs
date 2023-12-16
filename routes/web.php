@@ -49,6 +49,9 @@ Route::post('/users', [UserControler::class, 'store']);
 //Show profile page
 Route::get('/profile', [UserControler::class, 'show']);
 
+//Log out
+Route::post('/logout', [UserControler::class, 'logout']);
+
 
 
 
