@@ -13,6 +13,11 @@ class UserControler extends Controller
         return view('users.register');
     }
 
+    public function show()
+    {
+        return view('users.show');
+    }
+
     public function store(Request $request)
     {
         $formFields = $request->validate([

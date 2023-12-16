@@ -46,6 +46,9 @@ Route::get('/register', [UserControler::class, 'create']);
 // Create New user
 Route::post('/users', [UserControler::class, 'store']);
 
+//Show profile page
+Route::get('/profile', [UserControler::class, 'show']);
+
 
 
 

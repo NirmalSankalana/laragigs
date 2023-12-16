@@ -12,14 +12,7 @@
             </div>
         </form>
         <div class="d-flex align-items-center justify-content-around">
-            @auth
-            <a href="/listings/manage" class="btn btn-sm mx-1" type="submit">Manage Listings</a>
-            <a href="/listings/create" class="btn btn-sm mx-1" type="submit">Post a Job</a>
-            <i data-feather="user">Welcome {{auth()->user()->name}}</i>
-            @else
-            <a href="/login" class="btn btn-sm mx-1" type="submit">Login</a>
-            <a href="/register" class="btn btn-sm mx-1" type="submit">Register</a>
-            @endauth
+            <a href="/profile" class="btn btn-sm mx-1 btn-user" type="submit"><i data-feather="user"></i></a>            
         </div>
     </div>
 </header>
