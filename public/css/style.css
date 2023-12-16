@@ -27,6 +27,16 @@ header {
     justify-content: space-between;
 }
 
+.feather {
+    width: 24px;
+    height: 24px;
+    stroke: #ffffff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
 .search-btn>i {
     width: 0.75rem;
     height: 0.75rem;
@@ -37,15 +47,12 @@ header {
     fill: none;
 }
 
-
 .form-container {
     border-radius: 2%;
     background-color: var(--background);
     padding: 1rem;
     margin: 1rem;
 }
-
-
 
 .footer {
     width: 100%;

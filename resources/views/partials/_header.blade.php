@@ -12,9 +12,14 @@
             </div>
         </form>
         <div class="d-flex align-items-center justify-content-around">
-            <a href="/listings/create" class="btn btn-sm" type="submit">Post a Job</a>
-            <a href="/login" class="btn btn-sm" type="submit">Login</a>
-            <a href="/register" class="btn btn-sm" type="submit">Register</a>
+            @auth
+            <a href="/listings/manage" class="btn btn-sm mx-1" type="submit">Manage Listings</a>
+            <a href="/listings/create" class="btn btn-sm mx-1" type="submit">Post a Job</a>
+            <i data-feather="user">Welcome {{auth()->user()->name}}</i>
+            @else
+            <a href="/login" class="btn btn-sm mx-1" type="submit">Login</a>
+            <a href="/register" class="btn btn-sm mx-1" type="submit">Register</a>
+            @endauth
         </div>
     </div>
 </header>
