@@ -1,7 +1,6 @@
 @extends('layout')
 <div class="d-flex justify-content-center">
     <div class="form-container">
-        <a href="#" class="btn btn-secondary back-link">Back</a>
         <h2 class="text-center">Create a GIG</h2>
         <h6 class="text-muted text-center">Post a gig to find a developer</h6>
     

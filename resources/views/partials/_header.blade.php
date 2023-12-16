@@ -2,7 +2,7 @@
 
 <header>
     <a class="navbar-brand" href="/">LaraGigs</a>
-    <div class="navbar-control d-flex align-items-center">
+    <div class="navbar-control d-flex align-items-center justify-content-around">
         <form class="input-group input-group-sm mr-3">
             <input class="form-control form-control-sm" type="text" name="search" placeholder="Search" aria-label="Search">
             <div class="input-group-append">
@@ -11,7 +11,11 @@
                 </button>
             </div>
         </form>
-        <a href="/listings/create" class="btn btn-sm" type="submit">Post a Job</a>
+        <div class="d-flex align-items-center justify-content-around">
+            <a href="/listings/create" class="btn btn-sm" type="submit">Post a Job</a>
+            <a href="/login" class="btn btn-sm" type="submit">Login</a>
+            <a href="/register" class="btn btn-sm" type="submit">Register</a>
+        </div>
     </div>
 </header>
 

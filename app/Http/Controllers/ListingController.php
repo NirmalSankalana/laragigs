@@ -80,6 +80,13 @@ class ListingController extends Controller
 
         return back()->with('message', 'Listing updated successfully!');
     }
+
+    // Destroy
+    public function destroy(Listing $listing)
+    {
+        $listing->delete();
+        return redirect('/')->with('message', 'Listing deleted successfully');
+    }
 }
 
 // GET	    /photos/{photo}/comments	    index	photos.comments.index

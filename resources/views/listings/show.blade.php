@@ -21,6 +21,13 @@
                     <i data-feather="edit" class="mr-2"></i>Edit Listing
                 </a>
             </div>
+            <div class="p-4">
+                <form method="POST" action="/listings/{{$listing->id}}">
+                @csrf
+                @method('DELETE')
+                <button class="btn btn-"><i data-feather="trash-2" class="mr-2"></i> Delete Listing</button>
+                </form>
+            </div>
         </x-card>
     </div>
 
