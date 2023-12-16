@@ -32,8 +32,8 @@ header {
 }
 
 .feather {
-    width: 24px;
-    height: 24px;
+    width: 1.25rem;
+    height: 1.25rem;
     stroke: #ffffff;
     stroke-width: 2;
     stroke-linecap: round;
