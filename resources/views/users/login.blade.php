@@ -29,7 +29,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Login</button>
         </form>
-        <p>Don't have an account? <a href="/Register">Register</a></p>
+        <p>Don't have an account? <a href="/register">Register</a></p>
     </div>
 </div>
 

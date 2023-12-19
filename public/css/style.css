@@ -62,6 +62,8 @@ header {
     width: 100%;
     bottom: 0rem;
     background-color: var(--dark-blue);
+    position: fixed;
+    bottom: 0rem;
 }
 
 /* 2xl */

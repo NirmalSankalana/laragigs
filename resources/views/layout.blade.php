@@ -17,7 +17,7 @@
 
    
    <footer class="footer"> 
-        <a href="">post a job</a>
+        <a href="/listings/create">post a job</a>
    </footer>
    
    
